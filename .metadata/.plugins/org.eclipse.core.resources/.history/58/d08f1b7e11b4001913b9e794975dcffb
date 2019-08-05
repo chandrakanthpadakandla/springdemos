@@ -1,0 +1,22 @@
+package exercise1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		List<Employee> employeeList=new ArrayList<Employee>();
+		Scanner scanner=new Scanner(System.in);
+		int choice=0;
+		while(true){
+		System.out.println("1)ADD EMPLOYEE");
+		System.out.println("2) DISPLAY EMPLOYEE");
+		System.out.println("3) DELETE EMPLOYEES");
+		System.out.println("4) SEARCH EMPLOYEES");
+		System.out.println("5)EXIT");
+		choice=scanner.nextInt();
+	}
+
+}

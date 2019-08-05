@@ -1,0 +1,17 @@
+package com.cgi.name;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.cgi.model.Employee;
+import com.cgi.repo.EmployeeRepo;
+
+public class Main {
+
+	public static void main(String[] args) {
+ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+EmployeeRepo repo=(EmployeeRepo)context.getBean("emprepo");
+Employee emp=(Employee)context.getBean("employee");
+	}
+
+}

@@ -1,0 +1,51 @@
+package assignment2;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class EmployeeRepository {
+	   private List<Employee> empList;
+	   public EmployeeRepository()
+	   {
+	       empList=new ArrayList<Employee>();
+	   }
+	  public void setEmpList(List<Employee> empList){
+	      this.empList=empList;
+	  }
+	  public List<Employee> getEmpList(){
+	    return empList;
+	  } 
+	  public void addEmployee(Employee employee){
+	    empList.add(employee);
+	  }
+	  public boolean deleteEmployee(int code)
+	  {
+	     boolean deleted=false;
+	     Iterator<Employee> iter=empList.iterator();
+	     while(iter.hasNext())
+	     {
+	       Employee e=iter.next();
+	       if(e.getCode()==(code))
+	          {
+	                iter.remove();
+	                deleted=true;
+	                break;
+	          }
+	     }
+	    return deleted;
+	  }
+	 
+	  public boolean isExistEmployee(int code)
+	   {
+	      boolean isFound=false;
+	      for(Employee e : empList) {
+	          if(e.getCode()==(code))
+	               {
+	                 isFound=true;
+	                 break;
+	               } 
+	     }        
+	     return isFound;
+	   }
+	}

@@ -1,0 +1,26 @@
+package com.cgi.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class EmployeeController {
+	
+	     @RequestMapping("/")
+	    public String dispIndex()
+	    {
+	        return "register";
+	    }    
+	     
+	     @RequestMapping("/addEmp")
+	     public String addEmployee(@RequestParam String code, @RequestParam String name,Model model) {
+	         Employee emp=new Employee();
+	         emp.setCode(code);
+	         emp.setName(name);
+	         model.addAttribute("employeeDetails", emp);
+	         return "disp";
+	     }
+	}
+}

@@ -1,0 +1,17 @@
+127.0.0.1 - - [01/Aug/2019:09:45:40 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:09:45:41 +0530] "GET /assignment1/WEB-INF/classes/exercise1/EmployeeMain.java HTTP/1.1" 404 1047
+127.0.0.1 - - [01/Aug/2019:12:52:29 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:12:52:32 +0530] "GET /mvcspringdemo4/ HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:12:52:44 +0530] "GET /mvcspringdemo4/saveEmployee?code=18&name=chandra+kanth HTTP/1.1" 200 373
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:12:52:53 +0530] "GET /mvcspringdemo4/saveEmployee?code=19&name=naidu HTTP/1.1" 200 419
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:12:53:07 +0530] "GET /mvcspringdemo4/saveEmployee?code=20&name=jaiveer HTTP/1.1" 200 467
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:12:53:14 +0530] "GET /mvcspringdemo4/saveEmployee?code=21&name=bobby HTTP/1.1" 200 513
+127.0.0.1 - - [01/Aug/2019:13:33:55 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:33:55 +0530] "GET /mvcspringdemo4/WEB-INF/classes/com/employee/controller/EmployeeController.java HTTP/1.1" 404 1047
+127.0.0.1 - - [01/Aug/2019:13:35:11 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:35:13 +0530] "GET /mvcspringdemo4/ HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:35:17 +0530] "GET /mvcspringdemo4/saveEmployee?code=15&name= HTTP/1.1" 200 360
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:35:26 +0530] "GET /mvcspringdemo4/saveEmployee?code=15&name=chandu HTTP/1.1" 200 407
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:35:39 +0530] "GET /mvcspringdemo4/saveEmployee?code=22&name=%2Camisja HTTP/1.1" 200 455
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:35:46 +0530] "GET /mvcspringdemo4/saveEmployee?code=9&name=uucnc HTTP/1.1" 200 500
+0:0:0:0:0:0:0:1 - - [01/Aug/2019:13:36:00 +0530] "GET /mvcspringdemo4/deleteEmployee?code=9 HTTP/1.1" 200 455

@@ -1,0 +1,18 @@
+package com.cgi.model;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.cgi.model.Book;
+
+public class Main {
+
+	public static void main(String[] args) {
+	    ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+	    Book book=(Book)context.getBean("book");
+        book.setId(1);
+        book.setTitle("jack and jon");
+        book.setAuthor("chandu");
+	}
+
+}

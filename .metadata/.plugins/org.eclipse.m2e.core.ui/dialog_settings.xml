@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Spring java assignment\assignment-solution-step1\src\test\java\com\stackroute\keepnote\test\NoteRepositoryTest.java"/>
+			<item value="C:\Spring java assignment\assignment-solution-step1"/>
+			<item value="C:\springdemos\springdemo1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.cgi.assignment"/>
+			<item value="com.cgi.jdbcdemo"/>
+			<item value="com.cgi.annotationconfigurationdemo2"/>
+			<item value="com.cgi.annotationbasedconfiguration"/>
+			<item value="com.cgi.mvcspringdemo4"/>
+			<item value="com.cgi.assignment1"/>
+			<item value="com.cgi.mvcspringdemo3"/>
+			<item value="com.cgi.mvcspringdemo2"/>
+			<item value="com.cgi.mvcspringdemo1"/>
+		</list>
+		<list key="groupId">
+			<item value="com.cgi"/>
+		</list>
+		<list key="artifactId">
+			<item value="assignment"/>
+			<item value="jdbcdemo"/>
+			<item value="annotationconfigurationdemo2"/>
+			<item value="annotationbasedconfiguration"/>
+			<item value="mvcspringdemo4"/>
+			<item value="assignment1"/>
+			<item value="mvcspringdemo3"/>
+			<item value="mvcspringdemo2"/>
+			<item value="mvcspringdemo1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Spring java assignment\assignment-solution-step1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

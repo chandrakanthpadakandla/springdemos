@@ -1,0 +1,24 @@
+package com.cgi.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cgi.model.Employee;
+import com.cgi.repo.EmployeeRepo;
+
+
+	@Controller
+	public class EmployeeController {
+		EmployeeRepo repo=new EmployeeRepo();
+
+		@RequestMapping("/")
+		public String addEmployee(Model model)
+		{
+			List<Employee> empList=repo.getEmployeeList();
+			model.addAttribute("employeelist",empList);
+			return "index";
+		}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EmployeeRepository.java&apos; to &apos;newassignment/src/main/java/com.cgi.repo&apos;&#x0D;&#x0A;- Original project: &apos;mvcspringdemo4&apos;&#x0D;&#x0A;- Destination element: &apos;newassignment/src/main/java/com.cgi.repo&apos;&#x0D;&#x0A;- Original element: &apos;com.employee.repository.EmployeeRepository.java&apos;" description="Copy compilation unit" destination="=newassignment/src\/main\/java&lt;com.cgi.repo" element1="/src\/main\/java&lt;com.employee.repository{EmployeeRepository.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565001121406" units="1" version="1.0"/>
+</session>

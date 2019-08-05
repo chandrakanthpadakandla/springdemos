@@ -1,0 +1,88 @@
+package com.cgi.assignment;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.List;
+
+
+
+public class EmployeeRepository {
+	  private Connection connection;
+	  private PreparedStatement statement;
+		private List<Employee> empList;
+
+	 
+	   public EmployeeRepository() throws ClassNotFoundException, SQLException{
+	    //load the driver
+	    //initialise the connection
+		   try {
+		   Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connection=null;
+			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","cgi123");
+		   } catch (ClassNotFoundException e) {
+			    e.printStackTrace();
+			} catch (SQLException e) {
+			    e.printStackTrace();
+			}
+	   }
+	   public boolean addEmployee(Employee employee) throws SQLException{
+			String sql="INSERT INTO employee VALUES(?,?)";
+
+			PreparedStatement statement=connection.prepareStatement(sql);
+			  try {
+			statement.setString(1, employee.getCode());
+		    statement.setString(2, employee.getName());
+		    int n=statement.executeUpdate();
+		    if(n>0)	{
+		    	   return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+       }
+		    
+		    
+	
+
+	   //get the PreparedStatement object 
+	   //get the data from employee object
+	   //if the data got added successfully , return true  
+	    
+	
+	   public boolean deleteEmployee(String code){
+			String sql="DELETE FROM employee WHERE code=?";
+                 try {
+                     statement = connection.prepareStatement(sql);
+                     statement.setString(1, code);
+                 	System.out.println(sql);
+                 	  int n=statement.executeUpdate(sql);
+                      if(n>0) {
+                          System.out.println("record deleted successfully");
+                      }
+                     } catch (SQLException e) {
+                      // TODO Auto-generated catch block
+                      e.printStackTrace();
+                  }
+                  return false;
+                     }
+
+
+	   
+	   //get the code from main
+	   //delete the record for the code entered
+	   //if the record got deleted , return true
+	   
+	   public List<Employee> getEmployees(){
+		   
+		  } 
+
+}
+
+
+
+	
+

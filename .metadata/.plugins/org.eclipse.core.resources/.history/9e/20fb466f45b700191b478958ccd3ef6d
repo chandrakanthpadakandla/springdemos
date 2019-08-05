@@ -1,0 +1,6 @@
+package com.cgi.model;
+
+public class Employee {
+private String code;
+private String name;
+}

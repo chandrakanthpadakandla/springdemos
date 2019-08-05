@@ -1,0 +1,58 @@
+package com.cgi.assignment;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+	    List<Employee> empList=new ArrayList<Employee>();
+	    Scanner scanner=new Scanner(System.in);
+	    int ch;
+	    while(true) {
+	     System.out.println("1) ADD EMPLOYEE");
+	     System.out.println("2) DISPLAY EMPLOYEE");
+	     System.out.println("3) DELETE EMPLOYEE");
+	     System.out.println("4) SEARCH EMPLOYEE");
+	     System.out.println("5) EXIT");
+	     System.out.println("Enter the choice");
+	     ch=scanner.nextInt();
+	     switch(ch) {
+	     case 1   : Employee employee=new Employee();
+         System.out.println("Enter the code");
+         employee.setCode(scanner.next());
+         System.out.println("Enter the name");
+         employee.setName(scanner.next());
+         empList.add(employee);
+         break;
+
+	     case  2 :  for(Employee emp : empList)  {
+             System.out.println(emp.getCode()+"\t"+emp.getName());
+            }
+           break; 
+           
+	     case 3:
+	     
+	    	 System.out.println("Enter the code to be deleted");
+             String code=scanner.next();
+             Iterator<Employee> iter=empList.iterator();
+             while(iter.hasNext()){
+               {
+                    Employee e=iter.next();
+                    if(e.getCode().equals(code)){
+                         iter.remove();
+                         break;
+                    }
+                }
+              break;
+              
+              case 4: System.exit(0);
+             }
+	     }
+	     
+	     
+	     
+	     }
+

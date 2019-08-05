@@ -1,0 +1,25 @@
+package com.cgi.assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+	    List<Employee> empList=new ArrayList<Employee>();
+	    Scanner scanner=new Scanner(System.in);
+	    int ch;
+	    while(true) {
+	     System.out.println("1) ADD EMPLOYEE");
+	     System.out.println("2) DISPLAY EMPLOYEE");
+	     System.out.println("3) DELETE EMPLOYEE");
+	     System.out.println("4) SEARCH EMPLOYEE");
+	     System.out.println("5) EXIT");
+	     System.out.println("Enter the choice");
+	     ch=scanner.nextInt();
+	     switch(ch) {
+	}
+
+}
+	}

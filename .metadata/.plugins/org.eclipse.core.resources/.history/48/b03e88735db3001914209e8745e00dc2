@@ -1,0 +1,7 @@
+package com.cgi.model;
+
+public class Address {
+private int hno;
+private String city;
+private String state;
+}
